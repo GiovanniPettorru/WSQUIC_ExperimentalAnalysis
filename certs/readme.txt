@@ -1,0 +1,1 @@
+se faccio diventare il raspberry un broker, dovrò gestire nuovamente la questione certificati e modificare mosquitto.conf

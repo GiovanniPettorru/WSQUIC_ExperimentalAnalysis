@@ -1,0 +1,9 @@
+WSQUIC - Data transfer
+server:
+$ python serverWSQUIC.py --certificate tests/ssl_cert.pem --private-key tests/ssl_key.pem
+
+client:
+$ python clientWSQUIC.py --ca-certs tests/pycacert.pem wss://localhost:4433/ws (Without Sess. Resumption)
+$ python clientWSQUIC.py --ca-certs tests/pycacert.pem --session-ticket tests/ticket.bin wss://localhost:4433/ws  (With Sess. Resumption)
+
+
