@@ -14,8 +14,8 @@ After executing the following command, simply follow the on-screen instructions 
 ```console
 python main.py
 ```
+Be sure to review and update the paths to the scripts called in the [main.py](main.py) file as necessary. It is important to verify that the correct paths are used to ensure that the demo runs correctly.
 
-Fix paths inside this script if it is needed.
 In this demo, the communication takes place through the loopback interface since the client and server are executed on the same machine. If you wish to modify this behavior or make changes to other aspects of the communication, please refer to the files located in [this](WSclientserver) directory.
 
 However, for any queries related to QUIC and its functioning, we recommend consulting the [aioquic](https://github.com/aiortc/aioquic) library, which served as the foundation for this project.
