@@ -8,3 +8,9 @@ To execute this script, you will need to have Python 3.7 or a later version inst
 ```console
 pip install aioquic asgiref dnslib "flask<2.2" httpbin starlette "werkzeug<2.1" wsproto
 ```
+
+After executing the following command, simply follow the on-screen instructions to initiate the communication between the Client and Server using WebSocket over QUIC.
+
+```console
+python main.py
+```
