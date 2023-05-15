@@ -248,7 +248,7 @@ def save_session_ticket(ticket: SessionTicket) -> None:
 
     else:
         logger.info("New session ticket received")
-        with open("WSclientserver/tests/ticket.bin", "wb") as f:
+        with open("tests/ticket.bin", "wb") as f:
             pickle.dump(ticket, f)
         f.close()
 
