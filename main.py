@@ -3,6 +3,7 @@ import subprocess
 
 if __name__ == '__main__':
     try:
+        # FIX path if it is needed
         process = subprocess.Popen(['python', 'WSclientserver/serverWSQUIC.py', '--certificate',
                                     'WSclientserver/tests/ssl_cert.pem', '--private-key',
                                     'WSclientserver/tests/ssl_key.pem'])
@@ -17,6 +18,7 @@ if __name__ == '__main__':
                                   'client/server script.\n'))
             if inputmode == 1:
                 try:
+                    # FIX path if it is needed
                     os.system('python WSclientserver/clientWSQUIC.py --ca-certs WSclientserver/tests/pycacert.pem '
                               'wss://localhost:4433/ws')
                 except:
@@ -24,6 +26,7 @@ if __name__ == '__main__':
 
             elif inputmode == 0:
                 try:
+                    # FIX path if it is needed
                     os.system('python WSclientserver/clientWSQUIC.py --ca-certs tests/pycacert.pem --session-ticket '
                               'WSclientserver/tests/ticket.bin wss://localhost:4433/ws')
                 except:
