@@ -9,8 +9,10 @@ To execute this script, you will need to have Python 3.7 or a later version inst
 pip install aioquic asgiref dnslib "flask<2.2" httpbin starlette "werkzeug<2.1" wsproto
 ```
 
-After executing the following command, simply follow the on-screen instructions to initiate the communication between the Client and Server using WebSocket over QUIC.
+After executing the following command, simply follow the on-screen instructions to initiate the communication between the client and server using WebSocket over QUIC.
 
 ```console
 python main.py
 ```
+
+In this demo, the communication takes place through the loopback interface since the client and server are executed on the same machine. If you wish to modify this behavior or make changes to other aspects of the communication, please refer to the files located in [this](WSQUIC_experimentalTests/WSQUIC) directory.
