@@ -12,9 +12,10 @@ pip install aioquic asgiref dnslib "flask<2.2" httpbin starlette "werkzeug<2.1" 
 After executing the following command, simply follow the on-screen instructions to initiate the communication between the client and server using WebSocket over QUIC.
 
 ```console
-python main.py # FIX paths inside the script if needed
+python main.py
 ```
 
+Fix paths inside this script if it is needed.
 In this demo, the communication takes place through the loopback interface since the client and server are executed on the same machine. If you wish to modify this behavior or make changes to other aspects of the communication, please refer to the files located in [this](WSclientserver) directory.
 
 However, for any queries related to QUIC and its functioning, we recommend consulting the [aioquic](https://github.com/aiortc/aioquic) library, which served as the foundation for this project.
