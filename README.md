@@ -4,6 +4,7 @@ The demo presented here is based on modified scripts from the [aioquic](https://
 
 # Running the demo
 To execute this script, you will need to have Python 3.7 or a later version installed on your computer. Additionally, you will need to install all the required libraries beforehand.
-'''
+
+```console
 pip install aioquic asgiref dnslib "flask<2.2" httpbin starlette "werkzeug<2.1" wsproto
-'''
+```
